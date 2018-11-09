@@ -24,14 +24,14 @@ scrape_configs:
     scrape_interval: 5s
 
     static_configs:
-      - targets: ['http-api:5001']
+      - targets: ['127.0.0.1:5001']
         labels:
           group: 'production'
 
   - job_name: 'backend'
     scrape_interval: 5s
     static_configs:
-      - targets: ['backend:5000']
+      - targets: ['127.0.0.1:5000']
         labels:
           group: 'production'
 
@@ -39,3 +39,7 @@ scrape_configs:
     scrape_interval: 5s
     static_configs:
       - targets: ['127.0.0.1:9323']
+
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['127.0.0.1:9100']
