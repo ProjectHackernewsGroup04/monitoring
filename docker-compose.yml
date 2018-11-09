@@ -3,8 +3,9 @@ services:
   grafana:
     image: grafana/grafana:4.5.2
     ports:
-      - "3001:3000"  
-    network_mode: "host"
+      - "3001:3000"
+    networks:
+      - hnclone-network
 
 
   prometheus:
@@ -13,4 +14,9 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
-    network_mode: "host"
+    networks:
+      - hnclone-network
+
+networks:
+  hnclone-network:
+    external: true
