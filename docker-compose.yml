@@ -14,8 +14,7 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
-    networks:
-      - hnclone-network
+    network_mode: "host"
 
 networks:
   hnclone-network:
