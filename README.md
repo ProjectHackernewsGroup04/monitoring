@@ -13,7 +13,8 @@ https://github.com/datsoftlyngby/soft2018fall-lsd-teaching-material/blob/master/
 
 ## Grafana dashboard
 
-Link : https://snapshot.raintank.io/dashboard/snapshot/2h5NrITOaBIcN3b1tfkSh4y7A6e67lv0
+Link : https://snapshot.raintank.io/dashboard/snapshot/b3I9R55NgLkUHVUWIvHdHARAQoQbloYF
+
 
 ## SLA agreement document
 
