@@ -4,6 +4,8 @@ services:
     image: grafana/grafana:4.5.2
     ports:
       - "3001:3000"
+    volumes:
+      - /grafana:/var/lib/grafana
     networks:
       - hnclone-network
 
